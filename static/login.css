@@ -1,0 +1,57 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(31, 181, 201);
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: inherit;
+    
+}
+.col1 h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 1px 1px rgb(50, 81, 138);
+    text-align: center;
+}
+.input1{
+    background-color: white;
+    padding:20px;
+    border: white;
+    border-width: 2px;
+    width: 450px;
+    height: 30px;
+}
+.input1 aside{
+    font-family: 'Times New Roman', Times, serif;
+}
+.input_1{
+    margin: 0%;
+    border-radius: 4px;
+    border-width: 0px;
+    width: 250px;
+    box-shadow: 2px 2px 3px black;
+}
+.but_login{
+    box-shadow: 0px 2px 3px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: large;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+    width: 70px;
+    height: 30px;
+}
+.but_login:active{
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+    transform: translateY(2px);
+    padding: 0px;
+    margin: 0px;
+    
+}
+.but_login:hover{
+    cursor: pointer;
+}
+

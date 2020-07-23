@@ -1,0 +1,50 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get data</title>
+    <link rel="stylesheet" href="{%static 'scrapy.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Give the excel file from which you want the data
+            <a href="amazon">visit Amazon</a>
+        </h2>
+        <h3>
+            <a href="logout" style="font-family: 'Times New Roman', Times, serif; font-weight: 400; font-weight: 600;">Logout</a>
+        </h3>
+        <form  method="POST" enctype="multipart/form-data">
+            {%csrf_token%}
+            <p >
+               {{form.as_p}}
+                
+            </p>
+            
+            
+            <button type="submit" class="Submit_btn">Submit</button>
+        </form>
+    </div>
+    <div>
+        
+            
+    </div>
+    <div class="DwnCont">
+    <div>
+        {% for message in messages %}
+							<h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">{{message}}</h3>
+							{%endfor %}
+        <h2>
+            Click Download to get your csv file
+        </h2>
+    </div>
+    <div class="Download">
+        <a href="{%static 'files/product_detail.csv' %}" download>
+        <button type="button" class="btnDwn"> Download</button>
+        </a>
+        
+    </div>
+    </div>
+</body>
+</html>

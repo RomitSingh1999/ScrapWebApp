@@ -1,0 +1,43 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{%static 'login.css' %}">
+</head>
+<body>
+    <div style="font-family: 'Courier New', Courier, monospace; text-align: center; margin: 100px; font-size: larger;" >
+        <h2 style="color: crimson;">
+            Login to get your data
+        </h2>
+    </div>
+    <div class="container">
+        <div class="col1">
+            <h3 >Login</h3>
+        </div>
+        <form method="POST" action="">
+        {%csrf_token%}
+        <div class="input1">
+            <aside>User Name &nbsp;<input type="text" name="username" class="input_1"></aside>
+            
+        </div>
+        <div style="padding: 3px;">
+        </div>
+        <div class="input1">
+            <aside>Password &nbsp;<input type="password" name="password" class="input_1" placeholder="password"></aside>
+        </div>
+        
+        <div class="col1">
+            <h3><button class="but_login" id="login" type="submit">Login</button></h3>
+            
+        </div>
+        </form>
+        {% for message in messages %}
+							<h3>{{message}}</h3>
+							{%endfor %}
+    </div>
+    
+</body>
+</html>

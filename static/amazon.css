@@ -1,0 +1,100 @@
+
+.container{
+    
+    margin-left: 10%;
+    
+    max-height: 100%;
+    min-height: 100px;
+    max-width: 900px;
+    text-align: center;
+    overflow: inherit;
+    padding-bottom: 20px;
+}
+.container h2{
+    font-family: Georgia, Times, serif;
+    color: rgb(68, 73, 69);
+    text-shadow: 0px 0px 2px black;
+}
+.container p{
+    background-color: rgb(68, 204, 140);
+    height: 50px;
+    padding-top:8px ;
+}
+.container input{
+    all: none;
+    margin: 0px;
+    height: 25px;
+    width: 200px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px black;
+    border-width: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+.container input:active{
+    outline: none;
+    border: none;
+}
+h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.Submit_btn :hover{
+    cursor: pointer;
+}
+.Submit_btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin:0px;
+    border-width: 0px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    width: 80px;
+    height: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(212, 65, 7);
+}
+.Submit_btn:active{
+    box-shadow: inset 5px 3px 3px black ;
+    transform: translateY(4px);
+    outline: none;
+    border: none;
+    background-color: rgb(179, 54, 4);
+}
+.Submit_btn:hover{
+    background-color: rgb(179, 54, 4);
+}
+.DwnCont{
+    margin-left: 10%;
+    margin-right: inherit;
+    width: 50%;
+}
+.DwnCont h2{
+    font-family: 'Courier New', Courier, monospace;;
+}
+.btnDwn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin:0px;
+    border-width: 0px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    width: 80px;
+    height: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(36, 196, 36);
+}
+.btnDwn:hover{
+    cursor: pointer;
+    background-color: rgb(31, 150, 70);
+}
+.btnDwn:active{
+    box-shadow: inset 4px 2px 2px black ;
+    transform: translateY(4px);
+    outline: none;
+    border: none;
+    background-color: rgb(31, 150, 70);
+}
